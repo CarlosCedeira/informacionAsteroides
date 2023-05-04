@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Rubik+Vinyl&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Informacion sobre asteroides</title>
+  </head>
+  <body>
+    <header>
+      <h1>Informacion sobre asteroides</h1>
+      <div id="background-video">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/3/32/Earth_rotation.gif"
+          alt=""
+          srcset=""
+        />
+      </div>
+      <form action="post">
+        <ul>
+          <li><input type="date" name="" id="date" /></li>
+          <li><button id="boton">Buscar asteroides por fecha</button></li>
+        </ul>
+      </form>
+    </header>
+
+    <main>
+      <table id="tabla">
+        <caption></caption>
+        <thead>
+          <th>Nombre</th>
+          <th>Velocidad Km/s</th>
+          <th>Hora de mayor aproximacion</th>
+          <th>Tamaño promedio Km</th>
+          <th class="hidden">Orbitando sobre</th>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </main>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
