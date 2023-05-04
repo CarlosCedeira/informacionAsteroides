@@ -3,7 +3,6 @@ import { dateInput } from "./domYFecha/dom.js";
 
 export default function calcular(fechaEsperada) {
   borrado(); // Llamada a la funcion que se encarga de borrar la informacion de la tabla
-  //dateInput.max = obtenerFecha(); // Fecha maxima = a la de hoy
   dateInput.min = "1900-01-01"; // Fecha minima
 
   fetch(
