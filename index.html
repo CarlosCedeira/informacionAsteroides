@@ -16,6 +16,12 @@
   <body>
     <header>
       <h1>Informacion sobre asteroides</h1>
+      <form action="post">
+        <ul>
+          <li><input type="date" name="" id="date" /></li>
+          <li><button id="boton">Buscar asteroides por fecha</button></li>
+        </ul>
+      </form>
       <div id="background-video">
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/3/32/Earth_rotation.gif"
@@ -23,12 +29,6 @@
           srcset=""
         />
       </div>
-      <form action="post">
-        <ul>
-          <li><input type="date" name="" id="date" /></li>
-          <li><button id="boton">Buscar asteroides por fecha</button></li>
-        </ul>
-      </form>
     </header>
 
     <main>
@@ -37,7 +37,7 @@
         <thead>
           <th>Nombre</th>
           <th>Velocidad Km/s</th>
-          <th>Hora de mayor aproximacion</th>
+          <th class="hidden">Hora de mayor aproximacion</th>
           <th>Tamaño promedio Km</th>
           <th class="hidden">Orbitando sobre</th>
         </thead>
