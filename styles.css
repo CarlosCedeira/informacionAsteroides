@@ -135,6 +135,9 @@ caption {
   caption {
     visibility: hidden;
   }
+  .hidden {
+    display: none;
+  }
   main {
     margin: 0;
   }
